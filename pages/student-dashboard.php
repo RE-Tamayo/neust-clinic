@@ -12,11 +12,11 @@
   <body>
   	<div class="header">STUDENT DASHBOARD</div>
     <div class="grid-container">
-      <div class="user-info">1</div>
-      <div class="grid-col-span-2 user-info">2</div>
-      <div class="user-actions">3</div>
-      <div class="user-actions">4</div>
-      <div class="user-actions">5</div>
+      <div class="user-info">Picture</div>
+      <div class="grid-col-span-2 user-info">Personal Information</div>
+      <div class="user-actions">Sched Visit</div>
+      <div class="user-actions">Request Medcert</div>
+      <div class="user-actions">View Profile</div>
     </div>
   </body>
 </html>
