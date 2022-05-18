@@ -1,0 +1,32 @@
+.header 
+{	
+	margin: 0;
+	padding: 0;
+	background-color: #1A1F7C;
+	color: white;
+	text-align: center;
+	line-height: 90px;
+}
+
+.wrapper
+{	
+	display: grid;
+	grid-template-columns: 20% 80%;
+	grid-column-gap: 1.5em;
+}
+.left
+{	
+	display: grid;
+	grid-template-columns: 50% 50%;
+	
+}
+.wrapper >div
+{
+	background-color: #ddd;
+	column-gap: 1.5rem;
+	padding: 1em;
+}
+.container-md
+{
+	margin-top: 7%;
+}
