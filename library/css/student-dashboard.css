@@ -26,10 +26,17 @@
 }
 
 .user-actions {
-	background-color: blueviolet;
+	display: flex;
+	background-color: #1A1F7C;
 	height: 300px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 25px;
 }
 
 .logo-size {
-	font-size: 20rem;
+	font-size: 20px;
+	height: 170px;
+	width: auto;
 }
