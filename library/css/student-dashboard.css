@@ -8,25 +8,28 @@
 	line-height: 90px;
 }
 
-.wrapper
-{	
+.grid-container {
 	display: grid;
-	grid-template-columns: 20% 80%;
-	grid-column-gap: 1.5em;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+	grid-template-rows: auto 1fr;
+	padding: 2.5rem;
 }
-.left
-{	
-	display: grid;
-	grid-template-columns: 50% 50%;
-	
+
+.grid-col-span-2 {
+	grid-column: span 2;
 }
-.wrapper >div
-{
-	background-color: #ddd;
-	column-gap: 1.5rem;
-	padding: 1em;
+
+.user-info {
+	background-color: palegreen;
+	height: 200px;
 }
-.container-md
-{
-	margin-top: 7%;
+
+.user-actions {
+	background-color: blueviolet;
+	height: 300px;
+}
+
+.logo-size {
+	font-size: 20rem;
 }
