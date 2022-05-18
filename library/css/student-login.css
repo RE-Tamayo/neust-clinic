@@ -15,7 +15,7 @@ body {
 
 .login-container {
 	position: absolute;
-	top: 15%;
+	top: 5%;
 	bottom: 15%;
 	left: 15%;
 	right: 15%;
@@ -32,11 +32,12 @@ body {
 	background-color: #F89318;
 	border-top-right-radius: 30px;
 	border-bottom-right-radius: 30px;
+	padding-bottom: 1rem;
 }
 
 .logo {
-	height: 200px;
-	width: 200px;
+	height: 250px;
+	width: 250px;
 }
 
 .login-form {
@@ -59,12 +60,15 @@ body {
 	line-height: 50px;
 }
 
-.login-header {
-	margin-top: 20px;
+.register-button {
+	border-radius: 50px;
+	border: none;
+	width: 50%;
+	line-height: 50px;
 }
 
-.spacer {
-	margin-bottom: 60px;
+.login-header {
+	margin-top: 20px;
 }
 
 
@@ -72,6 +76,7 @@ a {
 	color: #000;
 	text-decoration: none;
 }
+
 
 @media only screen and (max-width: 767px) {
  
@@ -100,8 +105,8 @@ a {
 }
 
 .logo {
-	height: 80px;
-	width: 80px;
+	height: 110px;
+	width: 110px;
 }
 
 .login-form {
@@ -116,6 +121,11 @@ a {
 
 .login-button {
 	width: 80%;
+	line-height: 50px;
+}
+
+.register-button {
+	width: 50%;
 	line-height: 50px;
 }
 

@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arimo:wght@700&family=Poppins&family=Source+Code+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arimo:wght@700&family=Bebas+Neue&family=Poppins&family=Source+Code+Pro:wght@600&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Bebas Neue', cursive;
+
+}
+
 .header 
 {	
 	margin: 0;
@@ -6,6 +17,7 @@
 	color: white;
 	text-align: center;
 	line-height: 90px;
+	font-size: 5rem;
 }
 
 .grid-container {
@@ -39,4 +51,12 @@
 	font-size: 20px;
 	height: 170px;
 	width: auto;
+}
+
+.button-action {
+	background-color: #F89318;
+	border-radius: 25px;
+	padding: .5rem 1rem;
+	width: 70%;
+	margin-top: 1rem;
 }
