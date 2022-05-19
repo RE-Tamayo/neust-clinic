@@ -10,6 +10,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body style="background-color: #1A1F7C;">
+
 	<div class="container">
       <div class="row login-container">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 logo-container text-center">
@@ -27,12 +28,12 @@
               <button type="submit" class="m-2 mt-3 login-button">Log-In</button>
             </form>
           </div>
-          <a class="btn btn-primary" id="myBtn" href="#">Register</a>
-          <a class="btn btn-primary" id="myBtn" href="#">Forgot Password?</a>
+          <a class="m-2" id="register" href="#">Register</a>
+          <a class="m-2" id="password-reset" href="#">Forgot Password?</a>
         </div>
       </div>
 
-      <div id="myModal" class="modal">
+      <div id="register-modal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
           <form action="" class="modal-form">
