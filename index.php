@@ -54,15 +54,26 @@
             <center class="grid-col-span-7 mt-3"><label class="h2">Address</label>
               <hr></center>
 
-            <input type="text" class="form-control">
-            <input type="text" class="form-control">
-            <input type="text" class="form-control">
-            <input type="text" class="form-control">
-            <input type="text" class="form-control">
-            <input type="text" class="form-control">
-            <input type="text" class="form-control">
-            <input type="text" class="form-control">
-            <button class="btn">Register</button>
+            <input type="text" class="form-control grid-col-span-1" name="house-number" placeholder="House Number">
+            <input type="text" class="form-control grid-col-span-3" name="street" placeholder="Street">
+            <input type="text" class="form-control grid-col-span-3" name="barangay" placeholder="Barangay">
+            <input type="text" class="form-control grid-col-span-3" name="city" placeholder="City">
+            <input type="text" class="form-control grid-col-span-4" name="province" placeholder="Province">
+
+            <center class="grid-col-span-7 mt-3"><label class="h2">Family</label>
+              <hr></center>
+
+            <input type="text" class="form-control grid-col-span-2" name="mother-firstname" placeholder="Mother's First Name">
+            <input type="text" class="form-control grid-col-span-2" name="mother-middlename" placeholder="Mother's Middle Name">
+            <input type="text" class="form-control grid-col-span-2" name="mother-lastname" placeholder="Mother's Last Name">
+            <input type="text" class="form-control grid-col-span-1" name="mother-ext" placeholder="Ext.">
+            <input type="text" class="form-control grid-col-span-7" name="mother-occupation" placeholder="Mother's Occupation">
+            <input type="text" class="form-control grid-col-span-2" name="father-firstname" placeholder="Father's First Name">
+            <input type="text" class="form-control grid-col-span-2" name="father-middlename" placeholder="Father's Middle Name">
+            <input type="text" class="form-control grid-col-span-2" name="father-lastname" placeholder="Father's Last Name">
+            <input type="text" class="form-control grid-col-span-1" name="father-ext" placeholder="Ext.">
+            <input type="text" class="form-control grid-col-span-7" name="father-occupation" placeholder="Father's Occupation">
+            <button class="btn btn-success grid-col-span-7">Register</button>
           </form>
         </div>
       </div>
