@@ -19,18 +19,11 @@
   margin: 5% 0%; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 20%; /* Could be more or less, depending on screen size */
+  width: 50%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 38px;
-  font-weight: bold;
-}
-
-.close-reset {
   color: #aaa;
   float: right;
   font-size: 38px;
@@ -44,19 +37,11 @@
   cursor: pointer;
 }
 
-.close-reset:hover,
-.close-reset:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .modal-form {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(7, 1fr);
 }
-
 
 .grid-col-span-7 {
   grid-column: span 7;
@@ -84,4 +69,40 @@
 
 .grid-col-span-1 {
   grid-column: span 1;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .modal {
+    padding: 0 2rem;
+  }
+
+  .grid-col-span-7 {
+    grid-column: span 7;
+  }
+  
+  .grid-col-span-6 {
+    grid-column: span 7;
+  }
+  
+  .grid-col-span-5 {
+    grid-column: span 7;
+  }
+  
+  .grid-col-span-4 {
+    grid-column: span 7;
+  }
+  
+  .grid-col-span-3 {
+    grid-column: span 7;
+  }
+  
+  .grid-col-span-2 {
+    grid-column: span 7;
+  }
+  
+  .grid-col-span-1 {
+    grid-column: span 7;
+  }
+
 }
