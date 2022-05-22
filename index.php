@@ -1,35 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Login</title>
-	<link rel="stylesheet" href="library/css/student-login.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-</head>
-<body style="background-color: #1A1F7C;">
+<html>
 
-	<div class="container">
-      <div class="row login-container">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 logo-container text-center">
-          <img src="library/assets/neust_logo_animated.gif" alt="logo" class="logo mt-5">
-          <h5 class="mt-3">Welcome to Neust Clinic</h5>
-          <a href="#student">Not a student?<br>Click here.</a>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Log-In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="library/css/login.css">
+</head>
+
+<body>
+    <div id="form_wrapper">
+        <div id="form_left">
+            <img src="library/assets/neust_logo.png" alt="computer icon">
+            <h1>NEUST CLINIC</h1>
+
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-container text-center">
-          <h1 class="login-header">Log-In</h1>
-          <hr>
-        <div class="d-flex justify-content-center mb-3">
-          <form class="login-form">
-            <input type="text" name="username" placeholder="Username." class="form-control field mb-5">
-            <input type="password" name="password" placeholder="Password." class="form-control field mb-5">
-            <button type="submit" class="m-2 mt-3 login-button">Log-In</button>
-          </form>
+        <div id="form_right">
+            <center><img src="library/assets/neust_logo.png" alt="computer icon" class="image" id="form-image"></center>
+            <h1>Student Login</h1>
+            <div class="input_container">
+                <i class="fas fa-envelope"></i>
+                <input placeholder="Email" type="email" name="Email" id="field_email" class='input_field'>
+            </div>
+            <div class="input_container">
+                <i class="fas fa-lock"></i>
+                <input  placeholder="Password" type="password" name="Password" id="field_password" class='input_field'>
+            </div>
+            <input type="submit" value="Login" id='input_submit' class='input_field'>
+            <span>Forgot <a href="#"> Password ?</a></span>
+            <span id='create_account'>
+                <a href="#">Create your account &#x27A1; </a>
+            </span>
         </div>
-        <a class="m-2" id="register" href="#">Register</a>
-        <a class="m-2" id="password-reset" href="#">Forgot Password?</a>
-      </div>
     </div>
-  </div>
 </body>
+
 </html>
