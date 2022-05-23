@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.min.css" integrity="sha512-cyIcYOviYhF0bHIhzXWJQ/7xnaBuIIOecYoPZBgJHQKFPo+TOBA+BY1EnTpmM8yKDU4ZdI3UGccNGCEUdfbBqw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.all.min.js" integrity="sha512-IZ95TbsPTDl3eT5GwqTJH/14xZ2feLEGJRbII6bRKtE/HC6x3N4cHye7yyikadgAsuiddCY2+6gMntpVHL1gHw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <link rel="stylesheet" href="library/css/login.css">
 </head>
 
@@ -22,25 +21,32 @@
 
         </div>
         <div id="form_right">
-            <center><img src="library/assets/neust_logo.png" alt="computer icon" class="image" id="form-image"></center>
+            <div id="form-image">
+                <img src="library/assets/neust_logo.png" alt="neust_logo" class="image">
+            </div>
             <h1>Student Login</h1>
-            <div class="input_container">
-                <i class="fas fa-envelope"></i>
-                <input placeholder="Email" type="email" name="Email" id="field_email" class='input_field'>
-            </div>
-            <div class="input_container">
-                <i class="fas fa-lock"></i>
-                <input  placeholder="Password" type="password" name="Password" id="field_password" class='input_field'>
-            </div>
-            <input type="submit" value="Login" id='input_submit' class='input_field'>
-            <span><a href="#" id="reset-password">Forgot Password ?</a></span>
+            <form>
+                <div class="input_container">
+                    <i class="fas fa-envelope"></i>
+                    <input placeholder="Email" type="email" name="Email" id="field_email" class='input_field'>
+                </div>
+                <div class="input_container">
+                    <i class="fas fa-lock"></i>
+                    <input  placeholder="Password" type="password" name="Password" id="field_password" class='input_field'>
+                </div>
+                <input type="submit" value="Login" id='input_submit' class='input_field'>
+            </form>
+            <span><a href="#" id="reset-password open-modal" data-open="modal1">Forgot Password ?</a></span>
             <span id='create_account'>
                 <a href="#">Create your account &#x27A1; </a>
             </span>
         </div>
     </div>
 
-    <script src="library/js/reset-password.js"></script>
+    <?php
+        include "library/php/reset-password-modal.php";
+    ?>
+
 </body>
 
 </html>
