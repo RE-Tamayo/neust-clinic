@@ -25,28 +25,30 @@
                 <img src="library/assets/neust_logo.png" alt="neust_logo" class="image">
             </div>
             <h1>Student Login</h1>
-            <form>
+            <form id="login-form" action="library/php/login.php" method="POST">
                 <div class="input_container">
                     <i class="fas fa-envelope"></i>
-                    <input placeholder="Email" type="email" name="Email" id="field_email" class='input_field'>
+                    <input placeholder="Email" type="email" name="email" id="field_email" class='input_field'>
                 </div>
                 <div class="input_container">
                     <i class="fas fa-lock"></i>
-                    <input  placeholder="Password" type="password" name="Password" id="field_password" class='input_field'>
+                    <input  placeholder="Password" type="password" name="password" id="field_password" class='input_field'>
                 </div>
-                <input type="submit" value="Login" id='input_submit' class='input_field'>
+                <input type="submit" value="Login" id='input_submit' class='input_field' onclick="submitData()">
             </form>
             <span><a href="#" id="reset-password open-modal" data-open="modal1">Forgot Password ?</a></span>
             <span id='create_account'>
-                <a href="#">Create your account &#x27A1; </a>
+                <a href="#" data-open="modal2">Create your account &#x27A1; </a>
             </span>
         </div>
     </div>
 
     <?php
         include "library/php/reset-password-modal.php";
+        include "library/php/register.php";
     ?>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
 </html>

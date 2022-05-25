@@ -52,7 +52,7 @@ body {
     position: relative;
     max-width: 800px;
     max-height: 80vh;
-    border-radius: 5px;
+    border-radius: 2px;
     background: var(--white);
     overflow: auto;
     cursor: default;
@@ -96,12 +96,6 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-}
-
-[data-animation="slideInOutLeft"] .modal-dialog {
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: all 0.5s var(--bounceEasing);
 }
 
 .remove-margin-bot {
